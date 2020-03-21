@@ -502,7 +502,7 @@ function test_azure_pipelines_2 (){
     export BUILD_BUILDID="3"
     export BUILD_SOURCEBRANCHNAME="develop"
     export SYSTEM_TEAMPROJECT="project"
-    export BUILD_REPOSITORY_NAME="testOrg/testProject
+    export BUILD_REPOSITORY_NAME="testOrg/testProject"
     assertURL "https://codecov.io/upload/v4?package=bash-$VERSION&token=&branch=develop&commit=$TEST_DATA_GIT_COMMIT&build=1.2&build_url=https%3A%2F%2Fdev.azure.com%2Fproject%2F_build%2Fresults%3FbuildId%3D3&name=&tag=&slug=$BUILD_REPOSITORY_NAME&service=azure_pipelines&flags=&pr=33&job=3&project=project&server_uri=https://dev.azure.com/"
 }
 
